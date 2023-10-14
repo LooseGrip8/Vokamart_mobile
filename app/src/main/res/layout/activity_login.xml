@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/LinearAtas"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textSize="30sp"
+        android:fontFamily="@font/LexendBold"
+        android:textColor="@color/RedPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/LinearAtas"
+        />
+    <LinearLayout
+        android:id="@+id/linear_login_required"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/textLogin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textSize="20sp"
+            android:textColor="@color/GreyText"
+            android:fontFamily="@font/LexendRegular"/>
+
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/search_border"
+            android:height="45dp"
+            android:hint="example@gmail.com"
+            android:fontFamily="@font/LexendRegular"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:id="@+id/RegisterText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="20sp"
+            android:textColor="@color/GreyText"
+            android:fontFamily="@font/LexendRegular"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/EditPassword"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/search_border"
+            android:height="45dp"
+            android:hint="Password"
+            android:fontFamily="@font/LexendRegular"
+            android:textSize="15dp"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_login_required"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:text="@string/belum_punya_akun_daftar_di_sini"
+        android:textColor="@color/GreyText"
+        android:textSize="12sp"
+        android:fontFamily="@font/LexendRegular"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/linear_login_required"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:backgroundTint="@color/RedPrimary"
+        app:cardCornerRadius="7dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:textSize="18sp"
+            android:fontFamily="@font/LexendBold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
