@@ -52,7 +52,7 @@
             android:layout_height="match_parent"
             android:background="@drawable/search_border"
             android:height="45dp"
-            android:hint="example@gmail.com"
+            android:hint="   example@gmail.com"
             android:fontFamily="@font/LexendRegular"
             android:textSize="15dp"
             />
@@ -68,13 +68,13 @@
             android:layout_marginTop="15dp"/>
 
         <EditText
-            android:id="@+id/EditPassword"
+            android:id="@+id/Edit_Password"
             android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/search_border"
             android:height="45dp"
-            android:hint="Password"
+            android:hint="   Password"
             android:fontFamily="@font/LexendRegular"
             android:textSize="15dp"
             />
@@ -94,6 +94,7 @@
         android:fontFamily="@font/LexendRegular"/>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/Card_Login"
         android:layout_width="150dp"
         android:layout_height="45dp"
         android:layout_below="@id/linear_login_required"
