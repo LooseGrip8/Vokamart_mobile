@@ -4,21 +4,15 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class connection {
+        private static final String DB_URL = "jdbc:mysql://localhost:3306/vokamart";
+        private static final String USER = "";
+        private static final String PASSWORD = "";
 
-
-        public static Connection connect() {
-            Connection connection = null;
-            String url = "jdbc:mysql://your_db_server:3306/vokamart";
-            String username = "";
-            String password = "";
-
-            try {
-                connection = DriverManager.getConnection(url, username, password);
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-
-            return connection;
+        public static Connection getConnection() throws SQLException {
+            return DriverManager.getConnection(DB_URL, USER, PASSWORD);
         }
     }
+
+
+
 

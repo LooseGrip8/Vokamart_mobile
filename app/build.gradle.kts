@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace = "com.example.vokamart"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.vokamart"
         minSdk = 29
-        targetSdk = 33
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -40,4 +40,5 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation("mysql:mysql-connector-java:5.1.46")
+    implementation("androidx.activity:activity:1.7.0")
 }

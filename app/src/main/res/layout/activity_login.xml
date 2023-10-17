@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:text="@string/login"
         android:textSize="30sp"
-        android:fontFamily="@font/LexendBold"
+        android:fontFamily="@font/lexendbold"
         android:textColor="@color/RedPrimary"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/LinearAtas"
@@ -43,7 +43,7 @@
             android:text="@string/email"
             android:textSize="20sp"
             android:textColor="@color/GreyText"
-            android:fontFamily="@font/LexendRegular"/>
+            android:fontFamily="@font/lexendregular"/>
 
         <EditText
             android:id="@+id/edit_email"
@@ -53,7 +53,7 @@
             android:background="@drawable/search_border"
             android:height="45dp"
             android:hint="   example@gmail.com"
-            android:fontFamily="@font/LexendRegular"
+            android:fontFamily="@font/lexendregular"
             android:textSize="15dp"
             />
 
@@ -64,7 +64,7 @@
             android:text="Password"
             android:textSize="20sp"
             android:textColor="@color/GreyText"
-            android:fontFamily="@font/LexendRegular"
+            android:fontFamily="@font/lexendregular"
             android:layout_marginTop="15dp"/>
 
         <EditText
@@ -75,7 +75,7 @@
             android:background="@drawable/search_border"
             android:height="45dp"
             android:hint="   Password"
-            android:fontFamily="@font/LexendRegular"
+            android:fontFamily="@font/lexendregular"
             android:textSize="15dp"
             />
 
@@ -91,7 +91,7 @@
         android:text="@string/belum_punya_akun_daftar_di_sini"
         android:textColor="@color/GreyText"
         android:textSize="12sp"
-        android:fontFamily="@font/LexendRegular"/>
+        android:fontFamily="@font/lexendregular"/>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/Card_Login"
@@ -108,7 +108,7 @@
             android:layout_height="wrap_content"
             android:text="LOGIN"
             android:textSize="18sp"
-            android:fontFamily="@font/LexendBold"
+            android:fontFamily="@font/lexendbold"
             android:textColor="@color/white"
             android:layout_gravity="center"/>
 
