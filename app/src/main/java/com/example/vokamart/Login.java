@@ -14,6 +14,8 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import android.text.method.PasswordTransformationMethod;
+
 
 public class Login extends AppCompatActivity {
 
@@ -27,6 +29,7 @@ public class Login extends AppCompatActivity {
 
         EditEmail = findViewById(R.id.edit_email);
         EditPassword = findViewById(R.id.Edit_Password);
+        EditPassword.setTransformationMethod(new PasswordTransformationMethod());
         CardLogin = findViewById(R.id.Card_Login);
 
         CardLogin.setOnClickListener(new View.OnClickListener() {
