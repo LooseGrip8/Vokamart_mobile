@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="410dp"
+        android:layout_height="100dp"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/Menu"/>
+
+        <TextView
+            android:id="@+id/tambahproduk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80sp"
+            android:layout_marginTop="15sp"
+            android:text="@string/tambah_produk"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/frame_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:layout_below="@id/header">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/NamaProduk"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/lexendregular"/>
+
+        <EditText
+            android:id="@+id/edt_produk"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/search_border"
+            android:height="50dp"
+            android:fontFamily="@font/lexendregular"
+            android:textSize="15sp"
+            android:inputType="text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Harga"
+            android:textSize="15sp"
+            android:paddingTop="3dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/lexendregular"/>
+
+        <EditText
+            android:id="@+id/edt_harga"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/search_border"
+            android:height="40dp"
+            android:fontFamily="@font/lexendregular"
+            android:textSize="15sp"
+            android:inputType="text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Stok"
+            android:paddingTop="3dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/lexendregular"/>
+
+        <EditText
+            android:id="@+id/edt_stok"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/search_border"
+            android:height="40dp"
+            android:layout_marginEnd="200dp"
+            android:inputType="text"
+            android:fontFamily="@font/lexendregular"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Berat"
+            android:paddingTop="3dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/lexendregular"/>
+
+        <EditText
+            android:id="@+id/edt_berat"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/search_border"
+            android:height="40dp"
+            android:layout_marginEnd="200dp"
+            android:inputType="text"
+            android:fontFamily="@font/lexendregular"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kategori"
+            android:textSize="15sp"
+            android:paddingTop="3dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/lexendregular"/>
+
+        <EditText
+            android:id="@+id/edt_kategori"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/search_border"
+            android:height="40dp"
+            android:layout_marginEnd="200dp"
+            android:inputType="text"
+            android:fontFamily="@font/lexendregular"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/deskripsi"
+            android:textSize="15sp"
+            android:paddingTop="3dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/lexendregular"/>
+
+        <EditText
+            android:id="@+id/edt_deskripsi"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/search_border"
+            android:inputType="text"
+            android:fontFamily="@font/lexendregular"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/frame_form">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/variasi"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/lexendregular"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tambah"
+            android:textSize="20sp"
+            android:layout_marginStart="90dp"
+            android:textColor="@color/BlueHyperLink"
+            android:fontFamily="@font/lexendregular"/>
+
+</LinearLayout>
+</RelativeLayout>

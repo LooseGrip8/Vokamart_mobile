@@ -8,4 +8,18 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="sudah_punya_akun_login_disini">Sudah punya akun? Login disini</string>
+    <string name="tambah_produk">Tambah Produk</string>
+    <string name="NamaProduk">Nama Produk</string>
+    <string name="Harga">Harga</string>
+    <string name="Stok">Stok</string>
+    <string name="Berat">Berat</string>
+    <string name="kategori">Kategori</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="variasi">Variasi</string>
+    <string name="tambah">Tambah</string>
+    <string name="l_produk">List Produk</string>
+    <string name="filter">Filter</string>
+    <string name="menu">Menu</string>
+    <string name="plus">p</string>
+    <string name="pencarian">Pencarian</string>
 </resources>

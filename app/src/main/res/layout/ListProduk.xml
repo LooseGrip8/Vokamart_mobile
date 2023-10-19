@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="410dp"
+        android:layout_height="100dp"
+        android:padding="20dp"
+        android:id="@+id/listProduk">
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/Menu"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/menu"/>
+
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/l_produk"
+            android:layout_marginTop="15sp"
+            android:layout_marginStart="80sp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/Plus"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/plus"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/cariframe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/listProduk">
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:id="@+id/cari"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:background="@drawable/search_border"
+            android:height="45dp"
+            android:inputType="text"
+            android:hint="@string/pencarian"
+            android:autofillHints="name"
+            android:fontFamily="@font/lexendregular"
+            android:textSize="15sp"/>
+        <Button
+            android:id="@+id/filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/filter"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/cariframe">
+    </ScrollView>
+</RelativeLayout>
