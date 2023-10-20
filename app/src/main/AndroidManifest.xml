@@ -18,6 +18,11 @@
             android:name=".Lupa_Password"
             android:exported="false" />
         <activity
+            android:name=".TambahProduk"
+            android:exported="false"
+            android:label="@string/title_activity_tambah_produk"
+            android:theme="@style/Theme.Vokamart" />
+        <activity
             android:name=".Register"
             android:exported="false" />
         <activity
