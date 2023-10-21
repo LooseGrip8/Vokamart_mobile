@@ -55,7 +55,8 @@
             android:hint="   example@gmail.com"
             android:fontFamily="@font/lexendregular"
             android:textSize="15dp"
-            />
+            android:gravity="left|center_vertical"
+            android:paddingStart="8dp"/>
 
         <TextView
             android:id="@+id/RegisterText"
@@ -78,10 +79,23 @@
             android:hint="   Password"
             android:fontFamily="@font/lexendregular"
             android:textSize="15dp"
-            />
+            android:gravity="left|center_vertical"
+            android:paddingStart="8dp"/>
 
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_login_required"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:text="Lupa Password"
+        android:textSize="15sp"
+        android:textColor="@color/GreyText"
+        android:fontFamily="@font/lexendregular"
+        android:layout_alignParentEnd="true"/>
 
     <TextView
         android:layout_width="wrap_content"

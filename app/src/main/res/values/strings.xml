@@ -22,4 +22,9 @@
     <string name="menu">Menu</string>
     <string name="plus">p</string>
     <string name="pencarian">Pencarian</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="produk">Produk</string>
+    <string name="pesanan">Pesanan</string>
+    <string name="profil">Profil</string>
 </resources>
