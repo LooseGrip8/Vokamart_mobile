@@ -5,4 +5,5 @@
     <color name="RedPrimary">#EE5151</color>
     <color name="GreyText">#AAAAAA</color>
     <color name="BlueHyperLink">#52B8F2</color>
+    <color name="RedAccent">#FDEFEF</color>
 </resources>

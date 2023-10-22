@@ -29,6 +29,7 @@
             android:textSize="20sp"/>
     </LinearLayout>
 
+
     <View
         android:id="@+id/view_garis_pesanan"
         android:layout_width="match_parent"
@@ -36,33 +37,60 @@
         android:background="@color/GreyText"
         android:layout_below="@id/header_pesanan"/>
 
-    <com.google.android.material.tabs.TabLayout
+    <EditText
         android:layout_below="@id/view_garis_pesanan"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/Apptheme">
+        android:layout_marginTop="10dp"
+        android:id="@+id/cari_pesanan"
+        android:layout_width="370dp"
+        android:layout_height="49dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/search_border"
+        android:height="60dp"
+        android:inputType="text"
+        android:hint="  Pencarian"
+        android:autofillHints="name"
+        android:fontFamily="@font/lexendregular"
+        android:textSize="15sp"/>
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/cari_pesanan"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Pesanan Baru"/>
+            app:tabMode="scrollable"
+            app:tabIndicatorColor="@color/RedPrimary"
+            app:tabRippleColor="@color/RedPrimary"
+            app:tabTextAppearance="@style/MyTabTextAppearance"
+            app:tabSelectedTextColor="@color/RedPrimary">
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Perlu Dikirim"/>
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pesanan Baru"/>
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Dikirim"/>
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perlu Dikirim"/>
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Selesai"/>
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dikirim"/>
 
-    </com.google.android.material.tabs.TabLayout>
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selesai"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Dikomplain"/>
+
+        </com.google.android.material.tabs.TabLayout>
 
 
 </RelativeLayout>

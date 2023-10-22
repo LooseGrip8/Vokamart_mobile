@@ -15,7 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/menu"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:contentDescription="@string/menu"/>
 
@@ -24,8 +24,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/l_produk"
-            android:layout_marginTop="15sp"
-            android:layout_marginStart="80sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="55sp"
             android:ellipsize="end"
             android:maxLines="1"
             android:textSize="20sp"
@@ -63,7 +63,7 @@
             android:layout_marginTop="5dp"
             android:id="@+id/cari"
             android:layout_width="match_parent"
-            android:layout_height="39dp"
+            android:layout_height="49dp"
             android:background="@drawable/search_border"
             android:height="60dp"
             android:inputType="text"
@@ -71,16 +71,23 @@
             android:autofillHints="name"
             android:fontFamily="@font/lexendregular"
             android:textSize="15sp"/>
+
         <Button
             android:id="@+id/filter"
             android:textColor="@color/white"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
             android:text="@string/filter"
             android:fontFamily="@font/lexendsemibold"
             android:layout_marginTop="10dp"
             android:background="@drawable/button_primary"/>
     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/GreyText"
+        android:layout_below="@id/cariframe"
+        android:layout_marginTop="15dp"/>
 
     <ScrollView
         android:id="@+id/scrol"
