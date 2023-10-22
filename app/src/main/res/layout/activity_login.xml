@@ -98,6 +98,7 @@
         android:layout_alignParentEnd="true"/>
 
     <TextView
+        android:id="@+id/text_disini_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/linear_login_required"
@@ -108,25 +109,18 @@
         android:textSize="12sp"
         android:fontFamily="@font/lexendregular"/>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/Card_Login"
+    <Button
         android:layout_width="150dp"
-        android:layout_height="45dp"
-        android:layout_below="@id/linear_login_required"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_disini_login"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="180dp"
-        android:backgroundTint="@color/RedPrimary"
-        app:cardCornerRadius="7dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="LOGIN"
-            android:textSize="18sp"
-            android:fontFamily="@font/lexendbold"
-            android:textColor="@color/white"
-            android:layout_gravity="center"/>
-
-    </androidx.cardview.widget.CardView>
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_primary"
+        android:text="Login"
+        android:fontFamily="@font/lexendsemibold"
+        android:textSize="20sp"/>
 
 </RelativeLayout>
