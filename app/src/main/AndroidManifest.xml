@@ -15,25 +15,19 @@
         android:theme="@style/Theme.Vokamart"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity2"
-            android:exported="false" />
+            android:name=".MainDashboard"
+            android:exported="true" />
         <activity
             android:name=".Lupa_Password"
             android:exported="false" />
-<!--        <activity-->
-<!--            android:name=".TambahProduk"-->
-<!--            android:exported="false"-->
-<!--            android:label="@string/title_activity_tambah_produk"-->
-<!--            android:theme="@style/Theme.Vokamart" />-->
+
         <activity
             android:name=".Register"
             android:exported="false" />
         <activity
             android:name=".Login"
             android:exported="true">
-<!--        <activity-->
-<!--            android:name=".MainActivity"-->
-<!--            android:exported="true"/>-->
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

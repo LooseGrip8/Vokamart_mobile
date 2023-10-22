@@ -24,7 +24,9 @@
     <string name="pencarian">Pencarian</string>
     <string name="title_activity_main2">MainActivity2</string>
     <string name="title_home">Home</string>
-    <string name="produk">Produk</string>
+    <string name="produk_">Produk</string>
     <string name="pesanan">Pesanan</string>
     <string name="profil">Profil</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
