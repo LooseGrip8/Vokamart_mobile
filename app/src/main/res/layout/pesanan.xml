@@ -30,16 +30,39 @@
     </LinearLayout>
 
     <View
+        android:id="@+id/view_garis_pesanan"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="@color/GreyText"
         android:layout_below="@id/header_pesanan"/>
 
-    <HorizontalScrollView
-        android:layout_below="@+id/header_pesanan"
+    <com.google.android.material.tabs.TabLayout
+        android:layout_below="@id/view_garis_pesanan"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="15dp"/>
+        android:layout_height="wrap_content"
+        style="@style/Apptheme">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pesanan Baru"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perlu Dikirim"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dikirim"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selesai"/>
+
+    </com.google.android.material.tabs.TabLayout>
 
 
 </RelativeLayout>
