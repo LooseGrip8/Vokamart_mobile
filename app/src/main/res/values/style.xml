@@ -2,6 +2,7 @@
 <resources>
     <style name="Apptheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/RedPrimary</item>
+        <item name="colorPrimaryDark">@color/white</item>
     </style>
 
     <style name="MyTabLayout" parent="Widget.Design.TabLayout">

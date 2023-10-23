@@ -5,49 +5,51 @@
     android:layout_height="match_parent">
 
     <RelativeLayout
-        android:layout_width="410dp"
-        android:layout_height="80dp"
-        android:padding="20dp"
-        android:id="@+id/listProduk">
+        android:id="@+id/header_Produk"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/menu"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:contentDescription="@string/menu"/>
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="30dp"
+            android:contentDescription="@string/plus"
+            android:src="@drawable/plus" />
+
+
+        <ImageView
+            android:id="@+id/burger_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/menu"/>
 
         <TextView
-            android:id="@+id/textview3"
+            android:id="@+id/tambahproduk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/l_produk"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="55sp"
-            android:ellipsize="end"
-            android:maxLines="1"
-            android:textSize="20sp"
-            android:fontFamily="@font/lexendbold"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/plus"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="15dp"
-            android:layout_alignParentEnd="true"
-            android:contentDescription="@string/plus"/>
-
+            android:layout_alignEnd="@id/burger_menu"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="35sp"
+            android:layout_marginEnd="-84dp"
+            android:fontFamily="@font/lexendbold"
+            android:text="Produk"
+            android:textSize="20sp" />
 
     </RelativeLayout>
+
 
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="@color/GreyText"
-        android:layout_below="@id/listProduk"/>
+        android:layout_below="@id/header_Produk"/>
 
     <LinearLayout
         android:id="@+id/cariframe"
@@ -57,7 +59,7 @@
         android:paddingStart="25dp"
         android:paddingEnd="25dp"
         android:layout_marginTop="20dp"
-        android:layout_below="@id/listProduk">
+        android:layout_below="@id/header_Produk">
 
         <EditText
             android:layout_marginTop="5dp"
