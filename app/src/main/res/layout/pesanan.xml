@@ -27,6 +27,7 @@
             android:text="Pesanan"
             android:fontFamily="@font/lexendbold"
             android:textSize="20sp"/>
+
     </LinearLayout>
 
 
@@ -91,6 +92,13 @@
                 android:text="Dikomplain"/>
 
         </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
 
 
 </RelativeLayout>
