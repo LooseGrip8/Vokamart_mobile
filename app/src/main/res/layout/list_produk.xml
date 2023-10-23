@@ -72,7 +72,8 @@
             android:hint="  Pencarian"
             android:autofillHints="name"
             android:fontFamily="@font/lexendregular"
-            android:textSize="15sp"/>
+            android:textSize="15sp"
+            android:paddingStart="8dp"/>
 
         <Button
             android:id="@+id/filter"

@@ -59,8 +59,6 @@
         android:layout_below="@+id/img_profil"
         android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:paddingStart="40dp"
-        android:paddingEnd="40dp"
         android:layout_marginTop="10dp"
         android:orientation="vertical">
 
@@ -69,13 +67,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nama"
+            android:paddingStart="40dp"
             android:textSize="20sp"
             android:fontFamily="@font/lexendsemibold"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"/>
+            android:layout_marginTop="15dp"
+            android:paddingEnd="40dp"
+            android:paddingStart="40dp"/>
 
         <TextView
             android:layout_marginTop="20sp"
@@ -83,17 +84,21 @@
             android:layout_height="wrap_content"
             android:text="Email"
             android:textSize="20sp"
+            android:paddingStart="40dp"
             android:fontFamily="@font/lexendsemibold"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"/>
+            android:layout_marginTop="15dp"
+            android:paddingEnd="40dp"
+            android:paddingStart="40dp"/>
 
         <TextView
             android:layout_marginTop="20sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingStart="40dp"
             android:text="No. HP"
             android:textSize="20sp"
             android:fontFamily="@font/lexendsemibold"/>
@@ -101,6 +106,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingEnd="40dp"
+            android:paddingStart="40dp"
             android:layout_marginTop="15dp"/>
 
         <Button

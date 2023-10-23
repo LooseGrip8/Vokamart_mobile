@@ -42,7 +42,9 @@
         android:layout_below="@id/view_garis_pesanan"
         android:layout_marginTop="10dp"
         android:id="@+id/cari_pesanan"
-        android:layout_width="370dp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:layout_height="49dp"
         android:layout_centerHorizontal="true"
         android:background="@drawable/search_border"
@@ -51,7 +53,8 @@
         android:hint="  Pencarian"
         android:autofillHints="name"
         android:fontFamily="@font/lexendregular"
-        android:textSize="15sp"/>
+        android:textSize="15sp"
+        android:paddingStart="8dp"/>
 
 
 
@@ -65,7 +68,8 @@
             app:tabIndicatorColor="@color/RedPrimary"
             app:tabRippleColor="@color/RedPrimary"
             app:tabTextAppearance="@style/MyTabTextAppearance"
-            app:tabSelectedTextColor="@color/RedPrimary">
+            app:tabSelectedTextColor="@color/RedPrimary"
+            app:tabGravity="fill">
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
@@ -95,6 +99,7 @@
         </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager2.widget.ViewPager2
+        android:layout_below="@id/cari_pesanan"
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
