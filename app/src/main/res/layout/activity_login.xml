@@ -86,6 +86,7 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/Lupa_Pass_Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/linear_login_required"
@@ -93,7 +94,7 @@
         android:layout_marginEnd="20dp"
         android:text="Lupa Password"
         android:textSize="15sp"
-        android:textColor="@color/GreyText"
+        android:textColor="@color/RedPrimary"
         android:fontFamily="@font/lexendregular"
         android:layout_alignParentEnd="true"/>
 
@@ -105,7 +106,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="90dp"
         android:text="@string/belum_punya_akun_daftar_di_sini"
-        android:textColor="@color/GreyText"
+        android:textColor="@color/RedPrimary"
         android:textSize="12sp"
         android:fontFamily="@font/lexendregular"/>
 
