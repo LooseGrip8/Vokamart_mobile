@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Apptheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="Apptheme" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
         <item name="colorPrimary">@color/RedPrimary</item>
-        <item name="colorPrimaryDark">@color/RedPrimary</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item> <!-- This sets the status bar icons to dark -->
     </style>
 
     <style name="MyTabLayout" parent="Widget.Design.TabLayout">
