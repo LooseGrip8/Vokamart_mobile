@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -20,6 +21,9 @@ public class Login extends AppCompatActivity {
         Button btnlogin = findViewById(R.id.btn_Login);
         TextView text = findViewById(R.id.text_disini_login);
         TextView text2 = findViewById(R.id.Lupa_Pass_Text);
+
+
+
 
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -37,72 +37,61 @@
       android:layout_marginTop="80dp"
       android:layout_below="@id/textLogin">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/email"
-        android:textSize="20sp"
-        android:textColor="@color/GreyText"
-        android:fontFamily="@font/lexendregular"/>
-
-
-    <EditText
-        android:id="@+id/edit_email"
-        android:layout_marginTop="5dp"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/search_border"
-        android:height="60dp"
-        android:hint="example@gmail.com"
-        android:fontFamily="@font/lexendregular"
-        android:textSize="15sp"
-        android:paddingStart="10dp"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         android:layout_height="wrap_content"
-        android:text="@string/username"
-        android:textSize="20sp"
-        android:textColor="@color/GreyText"
-        android:fontFamily="@font/lexendregular"
-        android:layout_marginTop="15dp"/>
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        android:layout_marginTop="20dp">
 
-    <EditText
-        android:layout_marginTop="5dp"
-        android:id="@+id/edit_username"
+      <EditText
+          android:id="@+id/Edit_Email_Register"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:hint="Email"
+          android:fontFamily="@font/lexendregular"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/search_border"
-        android:height="60dp"
-        android:hint="username"
-        android:fontFamily="@font/lexendregular"
-        android:textSize="15dp"
-        android:paddingStart="10dp"
-        />
-
-    <TextView
-        android:id="@+id/RegisterText"
-        android:layout_width="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         android:layout_height="wrap_content"
-        android:text="@string/password"
-        android:textSize="20sp"
-        android:textColor="@color/GreyText"
-        android:fontFamily="@font/lexendregular"
-        android:layout_marginTop="15dp"/>
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        android:layout_marginTop="20dp">
 
-    <EditText
-        android:id="@+id/EditPassword"
-        android:layout_marginTop="5dp"
+      <EditText
+          android:id="@+id/Edit_Username_Register"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:hint="Username"
+          android:fontFamily="@font/lexendregular"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/search_border"
-        android:height="60dp"
-        android:hint="Password"
-        android:fontFamily="@font/lexendregular"
-        android:textSize="15sp"
-        android:paddingStart="10dp"
-        />
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_height="wrap_content"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        android:layout_marginTop="20dp"
+        app:endIconMode="password_toggle">
+
+      <EditText
+          android:id="@+id/Edit_Pass_Register"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:hint="Password"
+          android:fontFamily="@font/lexendregular"
+          android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
 
   </LinearLayout>
@@ -115,8 +104,8 @@
       android:layout_centerHorizontal="true"
       android:layout_marginTop="45dp"
       android:text="@string/sudah_punya_akun_login_disini"
-      android:textColor="@color/GreyText"
-      android:textSize="12sp"
+      android:textColor="@color/RedPrimary"
+      android:textSize="14sp"
       android:fontFamily="@font/lexendregular"/>
 
   <Button
