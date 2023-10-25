@@ -1,45 +1,54 @@
 package com.example.vokamart;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationBarView;
 
 public class MainDashboard extends AppCompatActivity {
 
-    BottomNavigationView bottomNavigationView;
-
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_dashboard);
+        loadFragment(new home());
 
-        bottomNavigationView = findViewById(R.id.nav_view);
-        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        BottomNavigationView navigation = findViewById(R.id.nav_view);
+        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+    }
 
-                int itemId = item.getItemId();
-                Fragment fragment = null;
+    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            Fragment fragment = null;
 
-                if (itemId == R.id.home) {
-                    fragment = new home();
-                } else if (itemId == R.id.product) {
-                    fragment = new produk();
-                } else if (itemId == R.id.pesanan) {
-                    fragment = new pesanan();
-                } else if (itemId == R.id.profil) {
-                    fragment = new profil();
-                        }
-                        getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment_activity_main2,fragment).commit();
-                        return true;
-                    }
-                });
+            if (item.getItemId() == R.id.home) {
+                fragment = new home();
+            } else if (item.getItemId() == R.id.product) {
+                fragment = new list_produk();
+            } else if (item.getItemId() == R.id.pesanan) {
+                fragment = new pesanan();
+            } else if (item.getItemId() == R.id.profil) {
+                fragment = new profil();
+            }
+            return loadFragment(fragment);
+        }
+    };
+
+    private boolean loadFragment(Fragment fragment) {
+        if (fragment == null) {
+            return false;
+        }
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        transaction.replace(R.id.nav_host_fragment_activity_main2, fragment);
+        transaction.commit();
+
+        return true;
     }
 }

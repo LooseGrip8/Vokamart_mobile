@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class produk extends Fragment {
+public class list_produk extends Fragment {
 
 
     @Override
