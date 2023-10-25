@@ -11,7 +11,7 @@
   <LinearLayout
       android:id="@+id/LinearAtasRegister"
       android:layout_width="match_parent"
-      android:layout_height="100dp"
+      android:layout_height="70dp"
       android:orientation="horizontal">
 
   </LinearLayout>
@@ -34,7 +34,7 @@
       android:orientation="vertical"
       android:paddingStart="25dp"
       android:paddingEnd="25dp"
-      android:layout_marginTop="100dp"
+      android:layout_marginTop="80dp"
       android:layout_below="@id/textLogin">
 
     <TextView
@@ -52,10 +52,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/search_border"
-        android:height="45dp"
-        android:hint="   example@gmail.com"
+        android:height="60dp"
+        android:hint="example@gmail.com"
         android:fontFamily="@font/lexendregular"
         android:textSize="15sp"
+        android:paddingStart="10dp"
         />
 
     <TextView
@@ -73,10 +74,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/search_border"
-        android:height="45dp"
-        android:hint="  username"
+        android:height="60dp"
+        android:hint="username"
         android:fontFamily="@font/lexendregular"
         android:textSize="15dp"
+        android:paddingStart="10dp"
         />
 
     <TextView
@@ -95,10 +97,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/search_border"
-        android:height="45dp"
-        android:hint="  Password"
+        android:height="60dp"
+        android:hint="Password"
         android:fontFamily="@font/lexendregular"
         android:textSize="15sp"
+        android:paddingStart="10dp"
         />
 
 

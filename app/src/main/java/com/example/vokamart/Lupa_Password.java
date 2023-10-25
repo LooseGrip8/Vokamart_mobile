@@ -20,6 +20,7 @@ public class Lupa_Password extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(Lupa_Password.this, Login.class);
+                startActivity(i);
             }
         });
 
