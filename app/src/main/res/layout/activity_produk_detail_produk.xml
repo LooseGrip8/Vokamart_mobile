@@ -1,9 +1,202 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DetailProduk">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/header_detail_produk"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/menu"/>
+
+        <TextView
+            android:id="@+id/tambahproduk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="35sp"
+            android:text="Detail Produk"
+            android:fontFamily="@font/lexendbold"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/view_garis_detail_produk"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/GreyText"
+        android:layout_below="@id/header_detail_produk"/>
+
+    <LinearLayout
+        android:id="@+id/Linear_foto_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_garis_detail_produk"
+        android:layout_marginTop="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lexendbold"
+            android:text="Foto Produk"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tambah"
+            android:layout_marginStart="200dp"
+            android:fontFamily="@font/lexendbold"
+            android:textColor="@color/RedPrimary"/>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_photo"
+        android:layout_width="370dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/Linear_foto_text"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/RedAccent">
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/linear_deskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_photo"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:text="Nama produk"
+            android:textSize="18sp"
+            android:fontFamily="@font/lexendbold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingStart="20dp"
+            android:text="Nama produk"
+            android:textSize="15sp"
+            android:fontFamily="@font/lexendregular"
+            android:textColor="@color/GreyText"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:text="Stok"
+            android:textSize="18sp"
+            android:fontFamily="@font/lexendbold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingStart="20dp"
+            android:text="@string/Stok"
+            android:textSize="15sp"
+            android:fontFamily="@font/lexendregular"
+            android:textColor="@color/GreyText"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:text="Harga"
+            android:textSize="18sp"
+            android:fontFamily="@font/lexendbold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingStart="20dp"
+            android:text="Harga"
+            android:textSize="15sp"
+            android:fontFamily="@font/lexendregular"
+            android:textColor="@color/GreyText"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:text="Deskripsi"
+            android:textSize="18sp"
+            android:fontFamily="@font/lexendbold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingStart="20dp"
+            android:text="Deskripsi"
+            android:textSize="15sp"
+            android:fontFamily="@font/lexendregular"
+            android:textColor="@color/GreyText"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Linear_varian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_deskripsi"
+        android:layout_marginTop="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lexendbold"
+            android:text="Varian"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ubah"
+            android:layout_marginStart="265dp"
+            android:fontFamily="@font/lexendbold"
+            android:textColor="@color/RedPrimary"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
