@@ -11,7 +11,7 @@ public class tambah_produk extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tambah_produk);
+        setContentView(R.layout.activity_produk_tambah_produk);
 
     }
 }
