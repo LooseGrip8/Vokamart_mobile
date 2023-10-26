@@ -12,7 +12,7 @@ public class Lupa_Password extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lupa_password);
+        setContentView(R.layout.activity_login_lupa_password);
 
         TextView text4 = findViewById(R.id.text_disini_reset);
 

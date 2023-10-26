@@ -21,7 +21,7 @@ public class pesanan extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.pesanan, container, false);
+        View view = inflater.inflate(R.layout.fragment_main_pesanan, container, false);
 
         tabLayout = view.findViewById(R.id.TabLayoutPesanan);
         viewPager = view.findViewById(R.id.viewPager);

@@ -9,12 +9,12 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class MainDashboard extends AppCompatActivity {
+public class Navbar extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_dashboard);
+        setContentView(R.layout.nav_bar);
         loadFragment(new home());
 
         BottomNavigationView navigation = findViewById(R.id.nav_view);

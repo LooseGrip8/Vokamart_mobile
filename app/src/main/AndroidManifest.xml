@@ -15,35 +15,31 @@
         android:theme="@style/Apptheme"
         tools:targetApi="31">
         <activity
-            android:name=".MainDashboard"
-            android:exported="true">
-
-        </activity>
+            android:name=".DetailProduk"
+            android:exported="false" />
+        <activity
+            android:name=".Navbar"
+            android:exported="true"></activity>
         <activity
             android:name=".Lupa_Password"
             android:exported="false" />
-
         <activity
             android:name=".Register"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".tambah_produk"
             android:exported="false"/>
         <activity
             android:name=".Login"
+            android:exported="true"></activity>
+        <activity
+            android:name=".splash_screen"
             android:exported="true">
-
-        </activity>
-
-        <activity android:name=".splash_screen"
-            android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 
