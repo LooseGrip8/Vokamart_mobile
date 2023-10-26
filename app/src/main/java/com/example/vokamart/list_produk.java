@@ -1,5 +1,6 @@
 package com.example.vokamart;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 
 public class list_produk extends Fragment {
@@ -16,6 +18,16 @@ public class list_produk extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_main_list_produk, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_main_list_produk, container, false);
+
+        ImageView imageView = rootView.findViewById(R.id.plus);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), tambah_produk.class);
+                startActivity(intent);
+            }
+        });
+        return rootView;
     }
 }
