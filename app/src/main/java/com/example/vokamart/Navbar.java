@@ -7,6 +7,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+
+import com.example.vokamart.MainFamily.home;
+import com.example.vokamart.MainFamily.list_produk;
+import com.example.vokamart.MainFamily.pesanan;
+import com.example.vokamart.MainFamily.profil;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Navbar extends AppCompatActivity {

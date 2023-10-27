@@ -1,4 +1,4 @@
-package com.example.vokamart;
+package com.example.vokamart.MainFamily;
 
 import android.os.Bundle;
 
@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+
+import com.example.vokamart.R;
 
 
 public class profil extends Fragment {

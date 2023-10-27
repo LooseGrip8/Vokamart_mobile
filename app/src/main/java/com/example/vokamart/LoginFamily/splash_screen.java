@@ -1,4 +1,4 @@
-package com.example.vokamart;
+package com.example.vokamart.LoginFamily;
 
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -6,7 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.View;
+
+import com.example.vokamart.R;
 
 public class splash_screen extends AppCompatActivity {
 

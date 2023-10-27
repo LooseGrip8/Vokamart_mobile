@@ -1,8 +1,10 @@
-package com.example.vokamart;
+package com.example.vokamart.DetailActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.vokamart.R;
 
 public class DetailProduk extends AppCompatActivity {
 

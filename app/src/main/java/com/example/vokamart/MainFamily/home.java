@@ -1,4 +1,4 @@
-package com.example.vokamart;
+package com.example.vokamart.MainFamily;
 
 import android.os.Bundle;
 
@@ -9,6 +9,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.vokamart.R;
 
 public class home extends Fragment {
 
