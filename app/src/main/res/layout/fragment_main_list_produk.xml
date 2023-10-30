@@ -77,29 +77,32 @@
 
         <Button
             android:id="@+id/filter"
-            android:textColor="@color/white"
             android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:text="@string/filter"
-            android:fontFamily="@font/lexendsemibold"
+            android:layout_height="48dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/button_primary"/>
+            android:background="@drawable/button_primary"
+            android:fontFamily="@font/lexendsemibold"
+            android:text="@string/filter"
+            android:textColor="@color/white" />
     </LinearLayout>
     <View
+        android:id="@+id/view_garis_bawah_filter"
         android:layout_width="match_parent"
         android:layout_height="3dp"
         android:background="@color/GreyText"
         android:layout_below="@id/cariframe"
         android:layout_marginTop="15dp"/>
 
-    <ScrollView
-        android:id="@+id/scrol"
+    <LinearLayout
+        android:layout_below="@id/view_garis_bawah_filter"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingStart="25dp"
-        android:paddingEnd="25dp"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/cariframe">
-    </ScrollView>
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_list_produk"
+            android:layout_width="match_parent"
+            android:layout_height="460dp"/>
+
+    </LinearLayout>
 </RelativeLayout>
