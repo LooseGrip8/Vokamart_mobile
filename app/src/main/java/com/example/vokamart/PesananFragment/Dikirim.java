@@ -8,7 +8,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+//import com.example.vokamart.Adapter.OrderAdapter;
+//import com.example.vokamart.Models.Pesanan;
 import com.example.vokamart.R;
+
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,6 +20,10 @@ import com.example.vokamart.R;
  * create an instance of this fragment.
  */
 public class Dikirim extends Fragment {
+
+//    List<Pesanan> newOrderItems = filterItemsByStatus(orderList, "new order");
+//    OrderAdapter adapter = new OrderAdapter(newOrderItems, "new order");
+//recyclerView.setAdapter(adapter);
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

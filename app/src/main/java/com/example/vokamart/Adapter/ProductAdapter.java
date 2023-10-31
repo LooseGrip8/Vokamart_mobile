@@ -14,7 +14,6 @@ import java.util.ArrayList;
 
 public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductViewHolder> {
     private final ArrayList<produk> produkArrayList;
-    private Context context; // Remove unused member variables
 
     public ProductAdapter(ArrayList<produk> produkArrayList) {
         this.produkArrayList = produkArrayList;
