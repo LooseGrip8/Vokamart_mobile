@@ -15,14 +15,14 @@
         android:theme="@style/Apptheme"
         tools:targetApi="31">
         <activity
-            android:name=".DetailActivity.DetailPesanan"
-            android:exported="false" />
-        <activity
             android:name=".DetailActivity.DetailProduk"
             android:exported="false" />
         <activity
+            android:name=".Tambah_Variasi"
+            android:exported="false" />
+        <activity
             android:name=".Navbar"
-            android:exported="true" />
+            android:exported="true"></activity>
         <activity
             android:name=".LoginFamily.Lupa_Password"
             android:exported="false" />
@@ -31,10 +31,10 @@
             android:exported="false" />
         <activity
             android:name=".MainFamily.tambah_produk"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".LoginFamily.Login"
-            android:exported="true" />
+            android:exported="true"></activity>
         <activity
             android:name=".LoginFamily.splash_screen"
             android:exported="true">
