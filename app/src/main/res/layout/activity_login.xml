@@ -47,11 +47,12 @@
             android:layout_marginTop="20dp">
 
             <EditText
-                android:id="@+id/edit_username"
+                android:id="@+id/edit_Email_Login"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:hint="Username"
-                android:fontFamily="@font/lexendregular"/>
+                android:hint="Email"
+                android:fontFamily="@font/lexendregular"
+                android:inputType="textEmailAddress"/>
         </com.google.android.material.textfield.TextInputLayout>
 
 

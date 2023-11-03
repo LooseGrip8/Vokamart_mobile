@@ -49,4 +49,6 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation("mysql:mysql-connector-java:5.1.46")
     implementation("androidx.activity:activity:1.8.0")
+
+    implementation("com.android.volley:volley:1.2.1")
 }
