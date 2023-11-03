@@ -7,8 +7,8 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import com.example.vokamart.PesananFragment.Dikirim;
 import com.example.vokamart.PesananFragment.Dikomplain;
+import com.example.vokamart.PesananFragment.FPesananBaru;
 import com.example.vokamart.PesananFragment.PerluDikirim;
-import com.example.vokamart.PesananFragment.PesananBaru;
 import com.example.vokamart.PesananFragment.Selesai;
 
 public class ViewPageAdapter extends FragmentStateAdapter {
@@ -24,7 +24,7 @@ public class ViewPageAdapter extends FragmentStateAdapter {
 
         switch (position) {
             case 0:
-                return new PesananBaru();
+                return new FPesananBaru();
             case 1:
                 return new PerluDikirim();
             case 2:
